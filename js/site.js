@@ -38,7 +38,7 @@
         hero.classList.add('run');
         try { ss && ss.setItem('orah-hero', '1'); } catch (e) {}
         ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(function (t) { window.addEventListener(t, finish, { passive: true }); });
-        setTimeout(finish, 5200);
+        setTimeout(finish, 6400);
       };
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
       setTimeout(go, 1500);

@@ -54,17 +54,17 @@ html,body{overflow-x:hidden}
 .hp-nav .navl,.hp-nav .lang{text-shadow:0 1px 8px rgba(20,12,8,0.9)}
 .hp-nav .navl{color:#F3ECE0}
 .hp-karo{position:absolute;left:0;bottom:0;width:1440px;height:24px;transform:scaleX(0);transform-origin:left}
-.run .hp-img{animation:hpKen 7s ease-out .2s forwards,hpFocus 1.6s ease 3.1s forwards}
-.run .hp-top{animation:hpUp 1.6s cubic-bezier(.75,0,.25,1) 1.6s forwards}
-.run .hp-bot{animation:hpDown 1.6s cubic-bezier(.75,0,.25,1) 1.6s forwards}
-.run .hp-tag{animation:hpUpS 1.6s cubic-bezier(.75,0,.25,1) 1.6s forwards}
-.run .hp-foot{animation:hpDownS 1.6s cubic-bezier(.75,0,.25,1) 1.6s forwards}
+.run .hp-img{animation:hpKen 8s ease-out .2s forwards,hpFocus 1.8s ease 4s forwards}
+.run .hp-top{animation:hpUp 2s cubic-bezier(.75,0,.25,1) 2.4s forwards}
+.run .hp-bot{animation:hpDown 2s cubic-bezier(.75,0,.25,1) 2.4s forwards}
+.run .hp-tag{animation:hpUpS 2s cubic-bezier(.75,0,.25,1) 2.4s forwards}
+.run .hp-foot{animation:hpDownS 2s cubic-bezier(.75,0,.25,1) 2.4s forwards}
 @keyframes hpUpS{to{transform:translateY(-440px)}}
 @keyframes hpDownS{to{transform:translateY(350px)}}
-.run .hp-dim{animation:hpIn 1.2s ease 2.6s forwards}
-.run .hp-nav{animation:hpIn .9s ease 3.4s forwards}
-.run .hp-in>*{animation:hpRise 1s cubic-bezier(.2,.7,.2,1) forwards}
-.run .hp-in>*:nth-child(1){animation-delay:3.3s}.run .hp-in>*:nth-child(2){animation-delay:3.45s}.run .hp-in>*:nth-child(3){animation-delay:3.6s}.run .hp-in>*:nth-child(4){animation-delay:3.75s}
+.run .hp-dim{animation:hpIn 1.4s ease 3.6s forwards}
+.run .hp-nav{animation:hpIn 1s ease 4.6s forwards}
+.run .hp-in>*{animation:hpRise 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+.run .hp-in>*:nth-child(1){animation-delay:4.3s}.run .hp-in>*:nth-child(2){animation-delay:4.45s}.run .hp-in>*:nth-child(3){animation-delay:4.6s}.run .hp-in>*:nth-child(4){animation-delay:4.75s}
 .run .hp-karo{animation:hpKaro 1.1s cubic-bezier(.7,0,.3,1) 3.1s forwards}
 @keyframes hpKen{to{transform:scale(1.03)}}
 @keyframes hpFocus{to{filter:blur(5px) saturate(1.05)}}
@@ -116,7 +116,7 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 <body>
 <div id="site">
 
-<div style="position: relative; width: 390px; height: 6053px; display: flex; flex-direction: column; background: #F3ECE0; color: #2B1F18; font-family: Lora, Georgia, serif; overflow: hidden">
+<div style="position: relative; width: 390px; height: 5999px; display: flex; flex-direction: column; background: #F3ECE0; color: #2B1F18; font-family: Lora, Georgia, serif; overflow: hidden">
 
 <!-- 1. ВРХ / ФОТОГРАФИЈА -->
 <header class="hp " style="flex-shrink: 0; z-index: 30">
@@ -172,10 +172,10 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 </header>
 
 <!-- 2. О НАМА (уски центрирани текст) -->
-<section style="height: 1264px; flex-shrink: 0; box-sizing: border-box; padding: 80px 24px 0; display: flex; flex-direction: column; align-items: center; text-align: center">
-<p class="serif reveal" style="margin: 20px 0 0; font-size: 33px; line-height: 1.16; font-weight: 400">Кувамо домаћа јела по старим, породичним рецептимa.</p>
-<p class="reveal" style="margin: 22px 0 0; font-size: 17px; line-height: 1.7; color: #4A3A2F">Салаш Орах је ресторан у Врбасу, на Кулском путу. Код нас се долази на миран ручак, породично окупљање или вече уз&nbsp;тамбуру.</p>
-<div style="width: 390px; height: 440px; margin-top: 52px; overflow: hidden; align-self: center"><img class="rimg" src="../images/adf78778f4a64439948a44ecdf0b9dca.jpg" alt="Сала салаша: дрвени плафон, слике коња, зидни сат и столови са карираним столњацима" style="width: 390px; height: 440px; object-fit: cover"></div>
+<section style="height: 1210px; flex-shrink: 0; box-sizing: border-box; padding: 80px 24px 0; display: flex; flex-direction: column; align-items: center; text-align: center">
+<p class="serif reveal" style="margin: 20px 0 0; font-size: 37px; line-height: 1.12; font-weight: 400">Кувамо домаћа јела по старим, породичним рецептима.</p>
+<p class="reveal" style="margin: 22px 0 0; font-size: 16px; line-height: 1.7; color: #5A4838">Салаш Орах је ресторан у Врбасу, на Кулском путу. Код нас се долази на миран ручак, породично окупљање или вече уз&nbsp;тамбуру.</p>
+<div style="width: 342px; height: 386px; margin-top: 52px; overflow: hidden; align-self: center"><img class="rimg" src="../images/adf78778f4a64439948a44ecdf0b9dca.jpg" alt="Сала салаша: дрвени плафон, слике коња, зидни сат и столови са карираним столњацима" style="width: 342px; height: 386px; object-fit: cover"></div>
 <div style="align-self: stretch; margin-top: 24px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; text-align: left">
 <a class="more" href="galerija.html" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 6px; line-height: 1.15">Погледајте<br>галерију <svg width="22" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 5h20M16 1l4 4-4 4"></path></svg></a>
 <div style="width: 220px; height: 272px; flex: none; overflow: hidden"><img class="rimg" src="../images/2d2d5a2362bf27ab6f04cc98cbc2b033.jpg" alt="Кутак са старом пећи од кахли, дрвеном клупом и зидним сатом" style="width: 220px; height: 272px; object-fit: cover"></div>
@@ -195,7 +195,7 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 <div style="position: relative; border: 1px solid rgba(176,141,87,0.65); padding: 30px 20px 28px">
 <div style="position: absolute; right: 16px; top: 22px"></div>
 <h2 class="serif" style="margin: 12px 0 0; font-size: 46px; line-height: 1; font-weight: 300">Шта&nbsp;јести?</h2>
-<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.7; color: #4A3A2F">Чорбе, роштиљ, јела испод сача, риба и домаћи колачи. Викендом телећа коленица, а шаран у рашљама по&nbsp;поруџбини.</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.7; color: #5A4838">Чорбе, роштиљ, јела испод сача, риба и домаћи колачи. Викендом телећа коленица, а шаран у рашљама по&nbsp;поруџбини.</p>
 <div style="display: flex; flex-direction: column; margin-top: 16px">
 <div style="display: flex; align-items: flex-end; gap: 10px; padding: 10px 0"><span class="serif" style="font-size: 20px; line-height: 24px; font-weight: 500">Салашарска даска за двоје</span><span class="dots"></span><span style="font-size: 13px; line-height: 24px; white-space: nowrap">1450 РСД</span></div>
 <div style="display: flex; align-items: flex-end; gap: 10px; padding: 10px 0"><span class="serif" style="font-size: 20px; line-height: 24px; font-weight: 500">Телећи сач</span><span class="dots"></span><span style="font-size: 13px; line-height: 24px; white-space: nowrap">1980 РСД</span></div>
@@ -228,7 +228,7 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 <div style="width: 342px; height: 380px; margin-top: 28px; overflow: hidden"><img class="rimg" src="../images/22e732a0a3f6fa2a0a1d126d9f5147f1.jpg" alt="Дуги сто постављен за госте, зимско сунце кроз прозоре салаша" style="width: 342px; height: 380px; object-fit: cover"></div>
 <div style="width: 200px; height: 240px; margin: -40px 0 0 auto; box-sizing: border-box; overflow: hidden; position: relative; box-shadow: 0 20px 30px -20px rgba(43,31,24,0.5)"><img class="rimg" src="../images/87426583ca4bdf258eb4d88a2ac086af.jpg" alt="Гости аплаудирају за дугим столом под шатором, прослава на салашу" style="width: 200px; height: 240px; object-fit: cover"></div>
 <div class="reveal" style="margin-top: 32px">
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #4A3A2F">За мања и већа друштва, у сали или у башти под орахом. Јавите нам датум и број гостију, па ћемо заједно договорити мени и&nbsp;детаље.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5A4838">За мања и већа друштва, у сали или у башти под орахом. Јавите нам датум и број гостију, па ћемо заједно договорити мени и&nbsp;детаље.</p>
 <a class="btn btn-gold" href="index.html#rezervacija-m" style="margin-top: 28px">Договоримо прославу</a>
 <div style="margin-top: 32px; border-top: 1px solid rgba(176,141,87,0.55); border-bottom: 1px solid rgba(176,141,87,0.55); padding: 8px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr))">
 <span class="serif" style="font-size: 22px; line-height: 44px; font-style: italic">Крштења</span>
@@ -245,7 +245,7 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 <div class="reveal" style="box-sizing: border-box; padding: 28px 24px 0">
 <h2 class="serif" style="margin: 0; font-size: 46px; line-height: 1; font-weight: 300">Боемске&nbsp;вечери</h2>
 <p class="serif" style="margin: 12px 0 0; font-size: 28px; line-height: 1.15; font-style: italic; color: rgba(243,236,224,0.85)">Сваке суботе</p>
-<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.75; color: rgba(243,236,224,0.88)">Тамбураши уживо, старе војвођанске песме и пуна трпеза до касно у ноћ. Резервишите сто на време.</p>
+<p style="margin: 24px 0 0; font-size: 16px; line-height: 1.75; color: rgba(243,236,224,0.88)">Тамбураши уживо, старе војвођанске песме и пуна трпеза до касно у ноћ. Резервишите сто на време.</p>
 <a class="btn btn-gold" href="index.html#rezervacija-m" style="margin-top: 28px">Резервишите сто</a>
 </div>
 </section>
@@ -382,7 +382,7 @@ form.is-tue x-if[data-k="tue"]{display:contents}
 <p style="margin: 8px 0 0; font-size: 17px; line-height: 1.6; display: grid; grid-template-columns: auto 1fr; column-gap: 24px"><span>Сваког дана</span><span style="font-variant-numeric: tabular-nums">06:00 – 23:00</span><span>Суботом</span><span style="font-variant-numeric: tabular-nums">06:00 – 01:00</span><span>Уторком</span><span style="font-variant-numeric: tabular-nums">затворено</span></p>
 </div>
 </div>
-<div style="position: relative; width: 342px; height: 300px; margin-top: 32px; overflow: hidden; background: #E4D8C3; border: 1px solid rgba(176,141,87,0.45); box-sizing: border-box"><iframe title="Мапа: Салаш Орах, Кулски пут бб, Врбас" src="https://maps.google.com/maps?q=%D0%A1%D0%B0%D0%BB%D0%B0%D1%88%20%D0%9E%D1%80%D0%B0%D1%85%2C%20%D0%9A%D1%83%D0%BB%D1%81%D0%BA%D0%B8%20%D0%BF%D1%83%D1%82%2C%20%D0%92%D1%80%D0%B1%D0%B0%D1%81&amp;z=14&amp;hl=sr&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="position: relative; display: block; width: 100%; height: 100%; border: 0"></iframe><a href="https://maps.app.goo.gl/B8miCHsDCee5ehtCA" target="_blank" rel="noopener" style="position: absolute; right: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; background: #2B1F18; color: #F3ECE0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 17px; font-style: italic; text-decoration: none">Отворите у Google мапама&nbsp;→</a></div>
+<div style="position: relative; width: 342px; height: 300px; margin-top: 32px; overflow: hidden; background: #E4D8C3; border: 1px solid rgba(176,141,87,0.45); box-sizing: border-box"><iframe title="Мапа: Салаш Орах, Кулски пут бб, Врбас" src="https://maps.google.com/maps?q=%D0%A1%D0%B0%D0%BB%D0%B0%D1%88%20%D0%9E%D1%80%D0%B0%D1%85%2C%20%D0%9A%D1%83%D0%BB%D1%81%D0%BA%D0%B8%20%D0%BF%D1%83%D1%82%2C%20%D0%92%D1%80%D0%B1%D0%B0%D1%81&amp;z=14&amp;hl=sr&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="position: relative; display: block; width: 100%; height: 100%; border: 0"></iframe><a class="btn" href="https://maps.app.goo.gl/B8miCHsDCee5ehtCA" target="_blank" rel="noopener" style="position: absolute; right: 16px; bottom: 16px; height: 44px; padding: 0 22px; background: #2B1F18; border-color: #C4A066; color: #F3ECE0">Отворите у Google мапама</a></div>
 <div style="margin-top: 64px; display: flex; flex-direction: column; align-items: center; text-align: center">
 <svg width="104" height="39" viewBox="0 0 150 56" role="img" aria-label="Салаш Орах"><text x="72" y="36" text-anchor="middle" fill="#2B1F18" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; font-weight: 500; letter-spacing: 4px">ОРАХ</text><path d="M121 13c2-7 8-11 15-11-1 7-7 12-15 11z" fill="#B08D57"></path><path d="M122 12c4-3 8-6 12-9" stroke="#F3ECE0" stroke-width="0.8" fill="none"></path><text x="74" y="52" text-anchor="middle" fill="#2B1F18" style="font-family: Lora, Georgia, serif; font-size: 9px; letter-spacing: 7px">САЛАШ</text></svg>
 <p class="serif" style="margin: 24px 0 0; font-size: 32px; line-height: 1.12; font-style: italic; font-weight: 300">Изглед можемо да вам покажемо, а за укус морате да&nbsp;дођете.</p>
