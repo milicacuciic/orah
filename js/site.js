@@ -5,11 +5,9 @@
   var site = document.getElementById('site');
 
   /* 1. Дизајн је цртан за 1440px (рачунар) и 390px (телефон).
-        Страница се скалира на ширину екрана, а на већим екранима стоји у средини. */
+        Страница се скалира тако да увек заузме целу ширину екрана. */
   function fit() {
-    var z = window.innerWidth / W;
-    if (W >= 1000) z = Math.min(1, z);
-    site.style.zoom = z;
+    site.style.zoom = document.documentElement.clientWidth / W;
   }
   fit();
   window.addEventListener('resize', fit);
