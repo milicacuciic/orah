@@ -18,7 +18,8 @@
   var ss = storage('sessionStorage');
   var ls = storage('localStorage');
 
-  /* 2. Херо: слова ОРАХ се отварају — само при првом уласку, тек кад се фонт учита. */
+  /* 2. Херо: ОРАХ стоји док гост не помери миш, скролује или додирне екран, па се отвара.
+        Само при првом уласку; ако гост ништа не ради, отвара се само после 7 секунди. */
   var hero = document.querySelector('header.hp');
   if (hero) {
     var seen = false;
@@ -26,19 +27,29 @@
     if (seen) {
       hero.classList.add('done');
     } else {
-      var started = false;
-      var finish = function () {
-        ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(function (t) { window.removeEventListener(t, finish); });
-        hero.classList.remove('run');
-        hero.classList.add('done');
+      var EV = ['mousemove', 'wheel', 'touchstart', 'keydown', 'pointerdown', 'scroll'];
+      var started = false, opened = false, t0 = 0, auto = null;
+      var open = function () {
+        if (!started || opened) return;
+        opened = true;
+        EV.forEach(function (t) { window.removeEventListener(t, open); });
+        clearTimeout(auto);
+        setTimeout(function () {
+          hero.classList.add('go');
+          setTimeout(function () {
+            hero.classList.remove('run', 'go');
+            hero.classList.add('done');
+          }, 4000);
+        }, Math.max(0, 1400 - (Date.now() - t0)));
       };
       var go = function () {
         if (started) return;
         started = true;
+        t0 = Date.now();
         hero.classList.add('run');
         try { ss && ss.setItem('orah-hero', '1'); } catch (e) {}
-        ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(function (t) { window.addEventListener(t, finish, { passive: true }); });
-        setTimeout(finish, 6400);
+        EV.forEach(function (t) { window.addEventListener(t, open, { passive: true }); });
+        auto = setTimeout(open, 7000);
       };
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
       setTimeout(go, 1500);
